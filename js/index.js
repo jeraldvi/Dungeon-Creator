@@ -1,4 +1,3 @@
-
 var map = [];
 
 let newElement;
