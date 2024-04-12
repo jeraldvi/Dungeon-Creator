@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Creator</title>
+
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div id="board">
+        <!-- cells -->
+    </div>
+
+    <div id="container">
+        <div id="title">
+            <h1>Matriz mapa</h1>
+        </div>
+        <textarea name="" id="map" cols="30" rows="30"></textarea>
+        <button onclick="copy('map')" id="copy">Copiar</button>
+        <button onclick="generate()" id="generate">Generar</button>
+        <button onclick="draw()" id="draw">Dibujar</button>
+    </div>
+    
+    <script src="../js/index.js"></script>
+    <script src="../js/tools.js"></script>
+</body>
+</html>

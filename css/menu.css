@@ -1,0 +1,62 @@
+body{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#board{
+    /* modify map */
+    width: 19*27px;
+    height: 19*27px;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    /* modify map */
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(27, 1fr);
+}
+
+#container{
+    width: 450px;
+    margin-left: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.cell{
+    border: 0px solid black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* background-color: red; */
+    background-image: url(../assets/imgs/dungeon-unselected.jpg);
+    transition: 0.2s;
+}
+
+.cell:hover{
+    background-image: url('../assets/imgs/dungeon-selected.jpg');
+}
+
+#title{
+    width: 400px;
+    margin: auto;
+    background-color: white;
+}
+
+#title h1{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#map{
+    margin: auto;
+    width: 400px;
+    display: block;
+    height: 300px;
+    background-color: white;
+    overflow-wrap: break-word;
+}
+
+#copy{
+    margin-top: 10px;
+}
