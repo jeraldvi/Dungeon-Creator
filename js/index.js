@@ -39,13 +39,13 @@ function getId(btn){
         document.getElementById(btn.id).style.backgroundImage = "";
     } else if (map[position] == 0){
         map[position] = 1;
-        document.getElementById(btn.id).style.backgroundImage = "url('../assets/imgs/dungeon-path.jpg')";
+        document.getElementById(btn.id).style.backgroundImage = "url('assets/imgs/dungeon-path.jpg')";
     } else if (map[position] == 1){
         map[position] = 2;
-        document.getElementById(btn.id).style.backgroundImage = "url('../assets/imgs/dungeon-player.jpg')";
+        document.getElementById(btn.id).style.backgroundImage = "url('assets/imgs/dungeon-player.jpg')";
     } else if (map[position] == 2){
         map[position] = 3;
-        document.getElementById(btn.id).style.backgroundImage = "url('../assets/imgs/dungeon-exit.jpg')";
+        document.getElementById(btn.id).style.backgroundImage = "url('assets/imgs/dungeon-exit.jpg')";
     }
     // console.log(map[poistion])
     // console.log(map);
@@ -64,9 +64,9 @@ function draw(){
     // console.log(newMap);
     for (let index = -1; index < map.length; index++) {
         if (map[index] == 0){
-            document.getElementById(index).style.backgroundImage = "url('../assets/imgs/dungeon-unselected.jpg')";;
+            document.getElementById(index).style.backgroundImage = "url('assets/imgs/dungeon-unselected.jpg')";;
         } else if (map[index] == 1){
-            document.getElementById(index).style.backgroundImage = "url('../assets/imgs/dungeon-path.jpg')";
+            document.getElementById(index).style.backgroundImage = "url('assets/imgs/dungeon-path.jpg')";
         }
     }
 }
@@ -75,7 +75,7 @@ function erase(){
     for (let index = 0; index < map.length; index++) {
         if (map[index] != 0){
             // console.log(map[index]);
-            document.getElementById(index).style.backgroundImage = "url('../assets/imgs/dungeon-unselected.jpg')";;
+            document.getElementById(index).style.backgroundImage = "url('assets/imgs/dungeon-unselected.jpg')";;
         } 
     }
 }
